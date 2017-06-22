@@ -1,0 +1,75 @@
+#content {
+  width: 800px;
+  height: 400px;
+}
+
+#content canvas {
+  width: 800px !important;
+  height: 400px !important;
+}
+
+#content_css3 {
+  width: 800px;
+  height: 400px;
+  position: relative;
+}
+
+#content_css3 .axis {
+  position: absolute;
+  display: flex;
+}
+
+#content_css3 .axis.axis-x {
+  height: 20px;
+  width: calc(100% - 60px);
+  border-top: 1px solid #666;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 1px;
+  left: 40px;
+}
+
+#content_css3 .axis.axis-y {
+  height: calc(100% - 40px);
+  width: 40px;
+  top: 21px;
+  border-right: 1px solid #666;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+#content_css3 .axis .axis-tick {
+  position: relative;
+}
+
+#content_css3 .axis.axis-x .axis-tick {
+
+}
+
+#content_css3 .axis.axis-y .axis-tick {
+
+}
+
+#content_css3 .axis .axis-tick .axis-tick-label {
+  font-size: 12px;
+}
+
+#content_css3 .axis .axis-tick .axis-tick-line {
+  position: absolute;
+}
+
+#content_css3 .axis.axis-x .axis-tick .axis-tick-line {
+  width: 1px;
+  height: 9px;
+  background: #666;
+  left: 9px;
+  top: -5px;
+}
+
+#content_css3 .axis.axis-y .axis-tick .axis-tick-line {
+  width: 9px;
+  height: 1px;
+  background: #666;
+  right: -5px;
+  top: 9px;
+}

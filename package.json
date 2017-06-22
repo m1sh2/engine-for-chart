@@ -1,13 +1,14 @@
 {
-  "name": "PhaserES6Webpack",
+  "name": "phaserchart",
   "version": "1.0.0",
   "description": "",
-  "author": "leandro cabrera <leandcabrera@gmail.com>",
+  "author": "Mike Datsko <mike@datsko.it>",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack",
-    "deploy": "webpack --config webpack.production.config.js",
-    "test": "eslint ./src/**/**.js"
+    "watch": "webpack",
+    "build:prod": "webpack --config webpack.production.config.js",
+    "test": "eslint ./src/**/**.js",
+    "server": "light-server -s . -p 7000"
   },
   "license": "MIT",
   "devDependencies": {
@@ -17,14 +18,17 @@
     "babel-preset-es2015": "^6.18.0",
     "browser-sync": "^2.18.6",
     "browser-sync-webpack-plugin": "^1.1.3",
+    "concurrently": "^3.4.0",
     "eslint": "^3.13.1",
     "eslint-config-standard": "^7.0.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "expose-loader": "^0.7.1",
+    "light-server": "^2.0.2",
     "webpack": "^2.2.0"
   },
   "dependencies": {
+    "jquery": "^3.2.1",
     "phaser-ce": "^2.7.3",
     "webfontloader": "^1.6.27"
   }

@@ -25,12 +25,11 @@ module.exports = {
     pathinfo: true,
     path: path.resolve(__dirname, 'dist'),
     publicPath: './dist/',
-    filename: 'bundle.js'
+    filename: '[name].bundle.js'
   },
   watch: true,
   plugins: [
     definePlugin,
-    new webpack.optimize.CommonsChunkPlugin({ name: 'vendor'/* chunkName= */, filename: 'vendor.bundle.js'/* filename= */}),
     new BrowserSyncPlugin({
       host: process.env.IP || 'localhost',
       port: process.env.PORT || 3000,

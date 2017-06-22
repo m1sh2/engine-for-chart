@@ -18,7 +18,7 @@ export default class extends Phaser.State {
 
   create () {
     setTimeout(() => {
-      this.state.start('Game');
+      this.state.start('Chart');
     }, 1000);
   }
 }
