@@ -2,28 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Phaser - ES6 - Webpack</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta http-equiv="cleartype" content="on">
-
-    <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Phaser's Chart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="cleartype" content="on">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="assets/bootstrap/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </head>
-
 <body>
+  <div class="container">
+    <div class="clearfix">
+      <img class="pull-right" src="assets/images/logo.png" alt="">
+      <h3>Engine for Chart</h3>
+      <h4>Check proove of concept</h4>
+    </div>
 
-    <div id="content"></div>
-    <script src="dist/vendor.bundle.js"></script>
-    <script src="dist/bundle.js"></script>
+    <ul class="nav nav-tabs" id="menu">
+      <li role="presentation" class="active"><a href="#phaser" aria-controls="phaser" role="tab" data-toggle="tab">Phaser</a></li>
+      <li role="presentation"><a href="#css3" aria-controls="css3" role="tab" data-toggle="tab">CSS 3</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="phaser">
+        <div class="page-header">
+          <h1>Phaser <small>Chart using js</small></h1>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <form class="form-inline" id="form_start">
+              <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="text" class="form-control" name="amount" placeholder="10, 100, 500" size="10" value="100">
+              </div>
+              <button type="submit" class="btn btn-success">
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+
+              <button type="button" class="btn btn-default" id="btn_move">
+                <span class="glyphicon glyphicon-play"></span>
+              </button>
+              <button type="button" class="btn btn-default" id="btn_stop" style="display: none">
+                <span class="glyphicon glyphicon-pause"></span>
+              </button>
+            </form>
+          </div>
+          <div class="col-sm-9">
+            <div id="content"></div>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="css3">
+        <div class="page-header">
+          <h1>CSS3 <small>Chart using css</small></h1>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <form class="form-inline" id="form_start_css3">
+              <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="text" class="form-control" name="amount" placeholder="10, 100, 500" size="10" value="100">
+              </div>
+              <button type="submit" class="btn btn-success">
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+
+              <button type="button" class="btn btn-default" id="btn_move_css3">
+                <span class="glyphicon glyphicon-play"></span>
+              </button>
+              <button type="button" class="btn btn-default" id="btn_stop_css3" style="display: none">
+                <span class="glyphicon glyphicon-pause"></span>
+              </button>
+            </form>
+
+            <label for="css_boost">
+              <input type="checkbox" name="" value="" id="css_boost"> CSS Boost
+            </label>
+          </div>
+          <div class="col-sm-9">
+            <div id="content_css3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <script src="dist/vendor.bundle.js"></script>
+  <script src="dist/bootstrap.bundle.js"></script>
+  <script src="dist/app.bundle.js"></script>
 
 </body>
-
 </html>
