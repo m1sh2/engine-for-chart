@@ -73,3 +73,15 @@
   right: -5px;
   top: 9px;
 }
+
+#content_css3 .shape {
+  position: absolute;
+  background: rgba(255, 100, 100, 0.9);
+  border-radius: 100%;
+  border: 1px solid rgba(255, 70, 70, 0.9);
+  transition: left 2s linear, top 2s linear;
+}
+
+.css_boost {
+  transform: translateZ(0);
+}

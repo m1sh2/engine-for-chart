@@ -1,6 +1,5 @@
 /* globals __DEV__ */
 import Phaser from 'phaser';
-import Mushroom from '../sprites/Mushroom';
 import jQuery from 'jquery';
 
 var bmd;
